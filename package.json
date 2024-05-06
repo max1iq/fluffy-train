@@ -1,0 +1,24 @@
+{
+  "name": "fluffy-train",
+  "version": "1.0.0",
+  "description": "fantastics spel Platformer/puzzel sido vy tiles is 16x16 single player",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max1iq/fluffy-train.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max1iq/fluffy-train/issues"
+  },
+  "homepage": "https://github.com/max1iq/fluffy-train#readme",
+  "dependencies": {
+    "phaser": "^3.80.1"
+  }
+}
