@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./src/index.html -p 5000"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/max1iq/fluffy-train#readme",
   "dependencies": {
+    "parcel-bundler": "^1.12.5",
     "phaser": "^3.80.1"
   }
 }
