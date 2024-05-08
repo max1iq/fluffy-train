@@ -4,8 +4,8 @@ import Title from './scenes/Title'
 import Tutorial from "./scenes/Tutorial"
 
 const config = {
-    width: 800,
-    height: 500,
+    width: 1200,
+    height: 600,
     type: Phaser.AUTO,
     physics: {
         default: 'arcade',

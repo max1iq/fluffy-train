@@ -24,7 +24,8 @@ export default class Tutorial extends Phaser.Scene {
         bigCircle.body.setBounce(1, 1)
 
         this.player = this.physics.add.sprite(100, 100, 'player')
-        this.player.body.setCollideWorldBounds(true, 1, 1)
+        this.player.body.setCollideWorldBounds(true)
+        this.player.body.setBounce(1, 1)
         
         const particles = this.add.particles(0, 0, 'particles', {
             speed: 0.1,
@@ -40,7 +41,7 @@ export default class Tutorial extends Phaser.Scene {
         this.physics.add.collider(rectangle, circle)
         this.physics.add.collider(rectangle, bigCircle)
         this.physics.add.collider(circle, bigCircle)
-        this.physics.add.collider(rectangle, this.player)
+        this.physics.add.collider(this.player, rectangle)
         this.physics.add.collider(this.player, circle)
         this.physics.add.collider(this.player, bigCircle)
 
@@ -49,16 +50,19 @@ export default class Tutorial extends Phaser.Scene {
 
     update() {
         if (this.cursors.left.isDown) {
-            this.player.setAccelerationX(-200)
+            this.player.setAccelerationX(-500)
         }
         else if (this.cursors.right.isDown) {
-            this.player.setAccelerationX(200)
+            this.player.setAccelerationX(500)
         }
         else {
             this.player.setAccelerationX(0)
         }
         if (this.cursors.up.isDown) {
-            this.player.setVelocityY(-300)
+            this.player.setAccelerationY(-700)
+        }
+        else {
+            this.player.setAccelerationY(0)
         }
     }
 }
