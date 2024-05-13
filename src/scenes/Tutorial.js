@@ -8,10 +8,10 @@ export default class Tutorial extends Phaser.Scene {
     }
 
     create() {
-        const text = this.add.text(400, 250, 'Tutorial', {fontSize: '50px'})
+        const text = this.add.text(600, 250, 'Tutorial', {fontSize: '50px'})
         text.setOrigin(0.5, 0.5)
 
-        const circle = this.add.circle(400, 350, 10, 0xffffff, 1)
+        const circle = this.add.circle(600, 350, 10, 0xffffff, 1)
         this.physics.add.existing(circle)
         circle.body.setCollideWorldBounds(true, 1, 1)
         circle.body.setVelocity(150, 200)
