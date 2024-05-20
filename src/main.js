@@ -1,7 +1,7 @@
 import Phaser from "phaser"
 
 import Title from './scenes/Title'
-import Tutorial from "./scenes/Tutorial"
+import LevelOne from "./scenes/LevelOne"
 
 const config = {
     width: 1200,
@@ -19,6 +19,6 @@ const config = {
 const game = new Phaser.Game(config)
 
 game.scene.add('title', Title)
-game.scene.add('tutorial', Tutorial)
+game.scene.add('levelOne', LevelOne)
 
 game.scene.start('title')

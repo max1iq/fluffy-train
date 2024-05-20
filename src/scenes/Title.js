@@ -12,7 +12,7 @@ export default class Title extends Phaser.Scene {
 
         const button = this.add.text(600, 350, 'Play', {fontSize: '25px'})
             .setInteractive()
-            .on('pointerdown', () => this.scene.start('tutorial'))
+            .on('pointerdown', () => this.scene.start('levelOne'))
         button.setOrigin(0.5, 0.5)
     }
 }
