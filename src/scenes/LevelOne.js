@@ -1,6 +1,6 @@
 import Phaser from "phaser"
 
-export default class Tutorial extends Phaser.Scene {
+export default class LevelOne extends Phaser.Scene {
 
     preload() {
         // this.load.image('player', 'Player.png')
@@ -33,7 +33,7 @@ export default class Tutorial extends Phaser.Scene {
         const particles = this.add.particles(0, 0, 'particles', {
             speed: 0.1,
             scale: {start: 1, end: 0.5},
-            blendMode: 'ADD'
+            blendMode: 'FALSE'
         })
 
         particles.startFollow(this.player)
