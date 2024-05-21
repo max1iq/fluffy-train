@@ -1,7 +1,7 @@
-import Phaser from "phaser"
+import Phaser from 'phaser'
 
 import Title from './scenes/Title'
-import LevelOne from "./scenes/LevelOne"
+import LevelOne from './scenes/LevelOne'
 
 const config = {
     width: 1200,
